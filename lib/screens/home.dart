@@ -1,3 +1,6 @@
+import 'dart:io';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:globalapp/app/app.dart';
@@ -40,8 +43,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Locale myLocale = Localizations.localeOf(context);
-    print(myLocale);
+    Locale myLocale = Localizations.localeOf(
+        context); // Returns the current locale of the app
+    print("App locale: " + myLocale.toString());
+
+    final String defaultLocale =
+        Platform.localeName; // Returns the current locale of the system
+    print("Current Locale(system): " + defaultLocale);
+
+    final List<Locale> systemLocales = window
+        .locales; // Returns the list of locales that user defined in the system settings.
+
+    print("System Locales: " + systemLocales.toString());
+    print("System Locales Count: " + systemLocales.length.toString());
 
     return Scaffold(
       appBar: AppBar(
