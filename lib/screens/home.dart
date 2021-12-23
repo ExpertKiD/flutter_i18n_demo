@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Text(AppLocalizations.of(context)!.helloWorld),
           ),
           Center(
-            child: Text('You\'ve got \$10 dollars!'),
+            child: Text(AppLocalizations.of(context)!.getOrangesText(5)),
           ),
         ],
       ),
