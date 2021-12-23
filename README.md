@@ -375,3 +375,4 @@ or `CupertinoApp`.
 1. [Lokalise](https://lokalise.com/blog/flutter-i18n/#Getting_started_with_Flutter_i18n)
 2. [Flag Emoji](https://flagpedia.net/emoji)
 3. [Flutter Internationlization Documentation](https://docs.flutter.dev/development/accessibility-and-localization/internationalization#dart-tools)
+4. [Gettting locale - Stackoverflow](https://stackoverflow.com/questions/50923906/how-to-get-timezone-language-and-county-id-in-flutter-by-the-location-of-device/62825776)
