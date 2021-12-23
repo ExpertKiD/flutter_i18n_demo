@@ -15,9 +15,9 @@ class AppLocalization {
 
   String getOrangesText(int numberOfOranges) => Intl.plural(
         numberOfOranges,
-        zero: 'Zero orange',
-        one: '$numberOfOranges orange',
-        other: '$numberOfOranges oranges',
+        zero: 'You\'ve got zero orange.',
+        one: 'You\'ve got $numberOfOranges orange.',
+        other: 'You\'ve got $numberOfOranges oranges.',
         name: 'getOrangesText',
         args: [numberOfOranges],
       );
