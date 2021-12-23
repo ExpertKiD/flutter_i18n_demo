@@ -1,21 +1,21 @@
 {
-  "@@locale": "es",
+  "@@locale": "ar",
   "@@last_modified": "2021-12-22T23:49:10.302862",
-  "appTitle": "Casa",
+  "appTitle": "مسكن",
   "@appTitle": {
     "description": "Application title/name",
     "type": "text",
     "placeholders_order": [],
     "placeholders": {}
   },
-  "helloWorld": "Hola Mundo!",
+  "helloWorld": "مرحبا بالعالم!",
   "@helloWorld": {
     "description": "Hello World message",
     "type": "text",
     "placeholders_order": [],
     "placeholders": {}
   },
-  "getOrangesText": "{numberOfOranges,plural, =0{Tienes cero naranjas.}=1{Tienes {numberOfOranges} naranja.}other{Tienes {numberOfOranges} naranjas.}}",
+  "getOrangesText": "{numberOfOranges,plural, =0{ليس لديك برتقال.}=1{لديك {numberOfOranges} برتقالة.}other{لديكلديك {numberOfOranges} حبات برتقال.}}",
   "@getOrangesText": {
     "type": "text",
     "placeholders_order": [
