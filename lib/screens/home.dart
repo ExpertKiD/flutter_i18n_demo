@@ -15,9 +15,11 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   var supportedLanguages = <Language>[
-    Language(1, "🇺🇸", "English", "en"),
-    Language(1, "🇺🇸", "English(UK)", "en", regionCode: 'GB'),
-    Language(2, "🇪🇸", "Spanish", "es"),
+    Language(1, '', 'System Default', 'system'),
+    Language(2, "🇺🇸", "English", "en"),
+    Language(3, "🇺🇸", "English(UK)", "en", regionCode: 'GB'),
+    Language(4, "🇪🇸", "Spanish", "es"),
+    Language(5, "🇸🇦", "Arabic", "ar"),
   ];
 
   void onSelect(Language item) {
@@ -34,6 +36,16 @@ class _HomeScreenState extends State<HomeScreen> {
       case 'es':
         print('Spanish selected');
         MyApp.of(context)?.setLocale(const Locale('es'));
+        break;
+
+      case 'ar':
+        print('Arabic selected');
+        MyApp.of(context)?.setLocale(const Locale('ar'));
+        break;
+
+      case 'system':
+        print('System selected ${Platform.localeName}');
+        MyApp.of(context)?.setLocale(null);
         break;
 
       default:
@@ -59,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: Text(AppLocalizations.of(context)!.appTitle),
         actions: [
           PopupMenuButton<Language>(
               onSelected: onSelect,
