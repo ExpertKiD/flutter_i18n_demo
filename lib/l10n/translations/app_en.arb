@@ -1,6 +1,5 @@
 {
-  "@@locale": "en_GB",
-  "@@last_modified": "2021-12-22T23:49:10.302862",
+  "@@last_modified": "2021-12-23T13:00:15.533122",
   "appTitle": "Home",
   "@appTitle": {
     "description": "Application title/name",
@@ -8,14 +7,14 @@
     "placeholders_order": [],
     "placeholders": {}
   },
-  "helloWorld": "Hello World in GB!",
+  "helloWorld": "Hello World!",
   "@helloWorld": {
     "description": "Hello World message",
     "type": "text",
     "placeholders_order": [],
     "placeholders": {}
   },
-  "getOrangesText": "{numberOfOranges,plural, =0{You've got zero orange in GB.}=1{You've got {numberOfOranges} orange in GB.}other{You've got {numberOfOranges} oranges in GB.}}",
+  "getOrangesText": "{numberOfOranges,plural, =0{You've got zero orange.}=1{You've got {numberOfOranges} orange.}other{You've got {numberOfOranges} oranges.}}",
   "@getOrangesText": {
     "type": "text",
     "placeholders_order": [
