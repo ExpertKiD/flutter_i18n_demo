@@ -350,7 +350,26 @@ final List<Locale> systemLocales = window.locales;
 final Locale appLocale = Localizations.localeOf(context);
 ```
 
+## 2. Update application locale different to system locale
 
+By default, the application will change to the system locale. However, you might want the user to 
+change the locale as per his/her wish. This can be done using the `locale` property of `MaterialApp`
+or `CupertinoApp`.
+
+1. If you set `locale` of `MaterialApp` or `CupertinoApp`, the application will change its locale to
+   the specified locale you have given. 
+   
+      However, if the application does not have that locale, it will loop through the `window.locales` 
+   i.e. the list of languages the user have installed currently and select the first one it finds to
+   match. Always, at least one locale will be provided to application.
+   
+2. If you do not set 'locale' of `MaterialApp` or `CupertinoApp`, the application will use the 
+   platform's locale as application locale.
+      
+      However, if the application does not have that locale, it will loop through the `window.locales`
+   i.e. the list of languages the user have installed currently and select the first one it finds to
+   match. Always, at least one locale will be provided to application.
+   
 ## References
 
 1. [Lokalise](https://lokalise.com/blog/flutter-i18n/#Getting_started_with_Flutter_i18n)
